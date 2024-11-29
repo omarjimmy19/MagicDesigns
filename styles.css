@@ -1,0 +1,235 @@
+/* Global Styles Start */
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input{
+    color: white;
+    background-color: rgb(36, 2, 2);
+    outline: none;
+    margin-bottom: 4px;
+    width: 100%;
+    border: none;
+    height: 40px;
+    padding: 4px 0px 4px 4px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="button"]{
+    border-radius: 15px;
+}
+input:hover{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: large;
+    transition: 0.1s all;
+}
+body{
+    background-color: rgb(113, 89, 89);
+}
+
+/* Global Styles End*/
+
+
+
+
+/* Header Styles Start */
+.head{
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    margin-top: 30px;
+}
+span{
+
+    color: #b6bb57;
+  }
+  .head p b{
+
+    color: #b6bb57;
+    font-weight: 900;
+  }
+
+
+/* Header Styles End */
+
+
+
+
+
+
+/* Input Styles Start */
+.input{
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.input #title{
+    width: 100%;
+}
+.total-price{
+    width: 100%;
+    margin: auto;
+    margin-top: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.total-price input{
+    width: 20%;
+}
+.total-price #total::before{
+    content: 'Total :';
+    font-weight: bold;
+}
+.total-price #total{
+    width:  15%;
+    height: 40px;
+    box-sizing: border-box;
+    padding-top: 14px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(75, 5, 5);
+}
+.input #create:hover{
+    background-color: rgba(64, 127, 176, 0.574);
+    font-size: large;
+    transition: 1s all;
+}
+.input #create{
+    font-size: larger;
+    background-color: rgb(64, 128, 176);
+    cursor: pointer;
+    font-weight: 800;
+    width: 200px;
+}
+/* Input Styles End */
+
+
+
+
+
+
+/* Output Styles Start */
+.output{
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+
+.output input[type="button"]:hover{
+    background-color: rgb(37, 5, 5);
+    font-size: large;
+    transition: 1s all;
+}
+.output input[type="button"]{
+    font-style: bold;
+    background-color: rgb(75, 5, 5);
+    cursor: pointer;
+}
+.searchBtns{
+    width: 100%;
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+}
+#deleteAll{
+    display: none;
+}
+.data{
+    width: 100%;
+    margin-top: 20px;
+    transform: translateX(-80px);
+
+}
+table{
+    width: 120%;
+    text-align: center;
+    border: rgba(74, 122, 118, 0.666);
+    border-style: groove;
+    
+ }   ئ
+table input{
+    padding: 0;
+    box-sizing: border-box;
+
+}
+table tr td:last-child{
+    width: 10%;
+}
+table tr td:nth-child(9){
+    width: 10%;
+}
+/* Output Styles End */
+.totals {
+    margin: 20px auto;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+.totals h3 {
+    margin: 10px 0;
+}
+.totals {
+    margin: 20px auto;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+.totals h3 {
+    margin: 10px 0;
+}
+
+/* لتنسيق اللوجو داخل الهيدر */
+header .logo {
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+/* لتنسيق اللوجو داخل الصفحة */
+.center-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.center-logo img {
+    width: 100px; /* حجم اللوجو */
+    height: auto; /* الحفاظ على النسبة بين العرض والارتفاع */
+}
+#share-whatsapp {
+    background-color: #25D366; /* لون واتساب */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#share-whatsapp:hover {
+    background-color: #1EBE5E; /* درجة داكنة من لون واتساب */
+    transform: scale(1.05); /* تكبير الزر عند التمرير */
+}
+
+#share-whatsapp:active {
+    background-color: #1AAE4F; /* لون أغمق عند الضغط */
+    transform: scale(0.95); /* تصغير الزر عند النقر */
+}

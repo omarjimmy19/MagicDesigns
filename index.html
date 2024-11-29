@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Magic</title>
+    <meta name="description" content="Product Management System built with Html5 , Css3 and JavaScript">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+          <img src="magic.jpg" alt="Your Logo" width="150" height="auto">
+      </div>
+  </header>
+    <div class="crud">
+      <div class="head">
+        <h2>المهندس<span>  محمد نور الدين</span></h2>
+        <h2>Magic<span>Designs</span></h2>
+        <p><b>Magic</b> For Finishing & Designs</p>
+      </div>
+      <div class="input">
+            <input type="text" id="title" placeholder="التاريخ">
+            <input type="text" id="omar" placeholder="يوم">
+            <div class="total-price">
+                <input oninput="getTotalPrice()" type="number" id="price" placeholder="العهدة">
+                <input oninput="getTotalPrice()" type="number" id="discount" placeholder="المصاريف">
+                <small id="total"></small>
+                <small id="tbl1"></small>       
+            </div>
+            <input type="number" id="count" placeholder="تكرار عملية التسجيل">
+            <input type="text" id="category" placeholder="البند / البيان">
+            <input type="button" onclick="submit(count.value)" value="Create" id="create">
+      </div>
+    <div class="output">
+        <input type="text" oninput="searchName()" id="search" placeholder="بحث   ">
+        <div class="searchBtns">
+            <input type="button" onclick="searchName('title')" id="sTitle" value="البحث بالتاريخ">
+            <input type="button" onclick="searchName('category')" id="sCategory" value="البحث بالبيان">
+        </div>
+        <div class="totals">
+          <p>إجمالي العهدة: <span id="totalAdvances">0.00</span></p>
+          <p>إجمالي المصاريف: <span id="totalExpenses">0.00</span></p>
+          <p> متبقي: <span id="difference">0.00</span></p>
+      </div>
+      <button id="share-whatsapp">مشاركة عبر واتساب</button>
+
+    
+        <div class="data">
+            <table id="table" border="2">
+                <thead>
+                    <th>ID</th>
+                    <th>العهد</th>
+                    <th>المصاريف</th>
+                    <th>التاريخ</th>
+                    <th>اليوم</th>
+                    <th>اجمالي</th>
+                    <th>البياند</th>
+                    <th>تحديث</th>
+                    <th>مسح الخانة</th>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  </body>
+</html>
