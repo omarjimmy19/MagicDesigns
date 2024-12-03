@@ -233,3 +233,13 @@ header .logo {
     background-color: #1AAE4F; /* لون أغمق عند الضغط */
     transform: scale(0.95); /* تصغير الزر عند النقر */
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* تكبير أو تصغير الخط */
+    }
+    .your-class { 
+        /* تعديل التصميم بناءً على الحاجة */
+        padding: 10px;
+    }
+}
